@@ -1,11 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 
 # Go through each commit of a branch to test if it's compilable.
 # In the end, report the commits that broke the build.
 
 ANSI_HIGHLIGHT_RED_ON="\x1B[1;31m"
 ANSI_HIGHLIGHT_OFF="\x1B[0m"
-
+MAKE=${MAKE-:make}
 
 rev=$(git rev-parse --symbolic-full-name --abbrev-ref HEAD)
 cmd="$2"
