@@ -1,4 +1,4 @@
 scripts
 =======
 
-the kitchen sink of my scripts
+PROJECT MOVED TO: https://github.com/lucasdemarchi/toolbox
